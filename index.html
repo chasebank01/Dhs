@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>U.S. Department of Homeland Security - Digital Identity Portal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --dhs-blue: #1c2e4a;
+      --light-gray: #f7f7f7;
+      --medium-gray: #e0e0e0;
+      --dark-gray: #555;
+    }
+
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      margin: 0;
+      background-color: var(--light-gray);
+      color: var(--dark-gray);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--dhs-blue);
+      color: white;
+      padding: 20px;
+      text-align: left;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 60px;
+      margin-right: 20px;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-right a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 30px auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      border-bottom: 2px solid var(--medium-gray);
+      padding-bottom: 30px;
+    }
+
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 30px;
+      border: 4px solid white;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-details h2 {
+      color: var(--dhs-blue);
+      margin: 0 0 10px 0;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .profile-details p {
+      margin: 5px 0;
+      color: var(--dark-gray);
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 20px;
+    }
+
+    .info-grid div {
+      background-color: var(--light-gray);
+      padding: 20px;
+      border-radius: 7px;
+      border: 1px solid var(--medium-gray);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .info-grid div strong {
+      color: var(--dhs-blue);
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      color: var(--dark-gray);
+      background-color: var(--light-gray);
+      border-top: 1px solid var(--medium-gray);
+    }
+
+    footer a {
+      color: var(--dhs-blue);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+
+      .profile {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .profile img {
+        margin: 0 auto 20px;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .header-right {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .header-right a {
+        margin-left: 0;
+        margin-top: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="display: flex; align-items: center;">
+      <img src="https://www.dhs.gov/sites/default/files/2021-02/DHS_Seal_Blue_140x140.png" alt="DHS Seal">
+      <h1>U.S. Department of Homeland Security - Digital Identity Portal</h1>
+    </div>
+    <div class="header-right">
+      <a href="#">Help</a>
+      <a href="#">Contact</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="profile">
+      <img src="https://i.imgur.com/oWQ4aKk.png" alt="Official Portrait">
+      <div class="profile-details">
+        <h2>Hannah Mae Garden</h2>
+        <p><strong>DHS Digital ID:</strong> DHS-2025-HG89-4276</p>
+        <p><strong>Status:</strong> Verified</p>
+      </div>
+    </div>
+
+    <div class="info-grid">
+      <div><strong>Full Legal Name:</strong> Hannah .M. Garden</div>
+      <div><strong>Date of Birth:</strong> July 12, 1991</div>
+      <div><strong>Place of Birth:</strong> Seattle, USA</div>
+      <div><strong>Citizenship:</strong> United States of America</div>
+      <div><strong>Residential Address:</strong> 1234 Rose Lane, Apt 202, Los Angeles, CA 90001</div>
+      <div><strong>Mailing Address:</strong> 1234 Rose Lane, Apt 202, Los Angeles, CA 90001</div>
+      <div><strong>Contact Number:</strong> (213) 555-0156</div>
+      <div><strong>Email Address:</strong> hannah.garden@gov.dhs.gov</div>
+      <div><strong>Issuing Authority:</strong> U.S. Department of Homeland Security - Digital Identity Management Agency</div>
+      <div><strong>Date of Issuance:</strong> April 1991</div>
+      <div><strong>Expiration Date:</strong> April 1, 2057</div>
+      <div><strong>Other Identifiers:</strong> CA Driver's License: DL98765432 | Voter ID: CA123456789 | Global Entry #: 1234567890</div>
+    </div>
+
+    <p style="margin-top: 20px; font-size: 14px; color: var(--dark-gray);">
+      This digital identity is issued and managed by the U.S. Department of Homeland Security. Secure access to your information is our top priority.
+    </p>
+  </div>
+
+  <footer>
+    <p>
+      <a href="#">U.S. Department of Homeland Security</a> |
+      <a href="#">Digital Identity Management Agency</a> |
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Terms of Service</a> |
+      <a href="#">Accessibility</a>
+    </p>
+    <p>&copy; 1980 U.S. Department of Homeland Security. All rights reserved.</p>
+  </footer>
+
+</body>
+    </html>
+    
